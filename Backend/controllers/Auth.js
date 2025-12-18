@@ -126,7 +126,6 @@ exports.signUp = async (req,res) => {
             })
         }
 
-
         // Hash Password
         const hashedPassword = await bcrypt.hash(password , 10) ;
 
@@ -232,6 +231,7 @@ exports.login = async (req,res) =>{
 
 
 // changePassword
+// TODO:HW
 exports.changePassword = async (req,res)=>{
      
     try{
